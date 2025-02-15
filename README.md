@@ -24,7 +24,9 @@ Set Up Environment Variables (.env)
 Create a .env file and add your API keys:
 
 PINECONE_API_KEY=your_pinecone_api_key
+
 OPENAI_API_KEY=your_openai_api_key
+
 GROQ_API_KEY=your_groq_api_key
 
 Running the Project
