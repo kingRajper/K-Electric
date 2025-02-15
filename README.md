@@ -31,31 +31,31 @@ GROQ_API_KEY=your_groq_api_key
 
 Running the Project
 1️⃣ Start the FastAPI Server
-bash
-Copy
-Edit
+
 python FastAPI_server.py
+
 2️⃣ Test the API
+
 Open your browser and go to:
 
-arduino
-Copy
-Edit
 http://127.0.0.1:8000/docs
+
 Use the Swagger UI to send search queries.
 
 3️⃣ API Example Usage (cURL)
-bash
-Copy
-Edit
+
+
 curl -X 'POST' \
+
   'http://127.0.0.1:8000/search' \
+  
   -H 'Content-Type: application/json' \
+  
   -d '{"query": "How does K-Electric distribute power?", "top_k": 5}'
+  
 4️⃣ Expected JSON Response
-json
-Copy
-Edit
+
+
 {
     "query": "How does K-Electric distribute power?",
     "results": [
@@ -67,27 +67,33 @@ Edit
         }
     ]
 }
+
+
 🛠 API Endpoints
+
 🔹 POST /search
+
 Description: Search the dataset and retrieve the most relevant results.
 Request Body:
-json
-Copy
-Edit
+
+
+
 {
   "query": "How does K-Electric distribute power?",
   "top_k": 5
 }
+
 Response:
-json
-Copy
-Edit
+
+
 {
   "query": "How does K-Electric distribute power?",
   "results": [
     {"id": "15", "genre": "Power Distribution", "filename": "distribution-overview.pdf", "answer": "K-Electric distributes power..."}
   ]
 }
+
+
 🔹 GET /
 Description: API Health Check
 Response: { "message": "K-Electric Search API is running!" }
