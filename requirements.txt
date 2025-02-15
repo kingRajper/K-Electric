@@ -1,0 +1,7 @@
+ openai 
+fastapi 
+uvicorn 
+paicorn
+pandas
+dotenv-cpu
+pydantic
